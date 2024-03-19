@@ -5,7 +5,7 @@ const addProfile=require('../Models/profile')
 const {auth,authPage}=require("../middleware/auth");
 const jwt=require("jsonwebtoken");
 const multer=require('multer');
-const SecretKey="Sibajit";
+const SecretKey="Kartik";
 
 
 var storage=multer.diskStorage({

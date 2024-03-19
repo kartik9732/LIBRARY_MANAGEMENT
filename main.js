@@ -33,15 +33,16 @@ app.use(cookieParser());
 app.set('view engine','ejs');
 
 
-//Database conection
+//Database  conection
 mongoose.connect(process.env.DB_URI).then(()=>{
     console.log("Dtabase conect");
+
 }).catch((error)=>{
     console.log(error);
 });
 
 
-//routes
+//routes 
 
 app.use("",require('./routes/routes'))
 app.use("",require('./routes/userRoutes'))
